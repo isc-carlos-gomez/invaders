@@ -1,0 +1,12 @@
+apply plugin: 'java'
+apply plugin: 'application'
+mainClassName = 'org.krloxz.invaders.desktop.Test'
+
+dependencies {
+//    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation project(':core')
+    implementation 'org.jmonkeyengine:jme3-lwjgl:3.1.0-stable'
+}
+
+sourceCompatibility = "1.7"
+targetCompatibility = "1.7"
